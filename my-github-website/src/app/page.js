@@ -1,4 +1,4 @@
-// test by importing custom image
+// test by importing custom 
 
 import Image from 'next/image'
 import styles from './page.module.css'
