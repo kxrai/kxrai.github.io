@@ -65,71 +65,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alicia Loi's Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: white;
-            padding: 1em;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        .container {
-            padding: 2em;
-        }
-        .section {
-            margin-bottom: 2em;
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5em;
-        }
-        .projects, .hobbies {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1em;
-        }
-        .project, .hobby {
-            background-color: white;
-            padding: 1em;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            flex: 1 1 calc(33% - 2em);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .project img, .hobby img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Alicia Loi's Personal Webpage</h1>
+        <h1>Alicia Loi</h1>
     </header>
     <nav>
         <a href="#about">About Me</a>
@@ -140,9 +80,7 @@
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>Hello! My name is Alicia Loi. I am a web developer with a passion for coding, 3D modeling, and drawing. I enjoy watching anime, especially Naruto, Haikyuu, Your Name, and Miraculous Ladybug. My favorite characters are Naruto, Obito, Korai Hoshiumi, and Luka from Ladybug.</p>
-            <p>I am also a big sports fan, particularly the NBA and NHL. I admire players like Steph Curry, Jimmy Butler, Kobe Bryant, Anthony Edwards, Auston Matthews, Wayne Gretzky, and Connor McDavid.</p>
-            <p>Additionally, I love the design of 3D isometric rooms and anime-style art. I have a fondness for Korea and ramen. I am inspired by the design style of Dongkyu Lim.</p>
+            <p>Hello! My name is Alicia Loi. I am a web developer with a passion for coding, 3D modeling, and drawing.</p>
         </section>
         <section id="projects" class="section">
             <h2>Projects</h2>
@@ -150,17 +88,14 @@
                 <div class="project">
                     <h3>Coding</h3>
                     <img src="file-EOkPQ2Y2ebOj3yXgSziyWjUN" alt="Coding project image">
-                    <p>Description of coding projects and experiences.</p>
                 </div>
                 <div class="project">
                     <h3>3D Models</h3>
                     <img src="file-YswIdjs5bpxX0wF68OBVotUS" alt="3D models project image">
-                    <p>Description of 3D modeling projects and experiences.</p>
                 </div>
                 <div class="project">
                     <h3>Drawing</h3>
                     <img src="file-PSKwzQllHH0u4EkzF2pd87ND" alt="Drawing project image">
-                    <p>Description of drawing projects and experiences.</p>
                 </div>
             </div>
         </section>
@@ -170,32 +105,30 @@
                 <div class="hobby">
                     <h3>Anime</h3>
                     <img src="file-EOkPQ2Y2ebOj3yXgSziyWjUN" alt="Anime hobby image">
-                    <p>I love watching anime and my favorite shows are Naruto, Haikyuu, Your Name, and Miraculous Ladybug.</p>
                 </div>
                 <div class="hobby">
                     <h3>Sports</h3>
                     <img src="file-YswIdjs5bpxX0wF68OBVotUS" alt="Sports hobby image">
-                    <p>I enjoy watching and playing sports, especially basketball and hockey. My favorite players include Steph Curry and Jimmy Butler.</p>
                 </div>
                 <div class="hobby">
                     <h3>3D Isometric Rooms</h3>
                     <img src="file-PSKwzQllHH0u4EkzF2pd87ND" alt="3D isometric rooms hobby image">
-                    <p>I enjoy designing 3D isometric rooms and exploring new designs in this style.</p>
                 </div>
             </div>
         </section>
         <section id="contact" class="section">
             <h2>Contact Information</h2>
-            <p>You can reach me at:</p>
-            <ul>
-                <li>Email: alicia@example.com</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/alicialoi">alicialoi</a></li>
-                <li>GitHub: <a href="https://github.com/alicialoi">alicialoi</a></li>
-            </ul>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </div>
     <footer>
         <p>&copy; 2024 Alicia Loi</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
