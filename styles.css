@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #ff4500; /* Naruto's orange */
+    color: #ffffff;
     padding: 1em 0;
     text-align: center;
 }
@@ -16,18 +16,18 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #2a2a2a;
+    background-color: #1e90ff; /* Obito's blue */
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     padding: 1em;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #3a3a3a;
+    background-color: #6495ed; /* Light blue for hover effect */
 }
 
 .container {
@@ -39,9 +39,9 @@ nav a:hover {
 }
 
 h2 {
-    border-bottom: 2px solid #1a1a1a;
+    border-bottom: 2px solid #ff4500; /* Naruto's orange */
     padding-bottom: 0.5em;
-    color: #1a1a1a;
+    color: #ff4500; /* Naruto's orange */
 }
 
 .projects, .hobbies {
@@ -51,7 +51,7 @@ h2 {
 }
 
 .project, .hobby {
-    background-color: white;
+    background-color: #f5f5f5;
     padding: 1em;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -81,20 +81,20 @@ h2 {
     padding: 0.5em;
     border: none;
     border-radius: 4px;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #ff4500; /* Naruto's orange */
+    color: #ffffff;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #contact-form button:hover {
-    background-color: #3a3a3a;
+    background-color: #ff6347; /* Lighter orange for hover effect */
 }
 
 footer {
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #1e90ff; /* Obito's blue */
+    color: #ffffff;
     text-align: center;
     padding: 1em 0;
 }
