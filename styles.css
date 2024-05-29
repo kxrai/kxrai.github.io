@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans JP', sans-serif; /* Modern and clean font with Japanese/Korean vibes */
     background-color: #ffffff;
     color: #333;
     margin: 0;
@@ -11,12 +11,15 @@ header {
     color: #ffffff;
     padding: 1em 0;
     text-align: center;
+    font-family: 'Noto Serif JP', serif; /* Serif font for a touch of traditional elegance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     justify-content: center;
     background-color: #1e90ff; /* Obito's blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -26,11 +29,13 @@ nav a {
     display: flex;
     align-items: center;
     gap: 0.5em;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 nav a:hover {
     background-color: #6495ed; /* Light blue for hover effect */
+    transform: scale(1.05);
 }
 
 .icon {
@@ -74,12 +79,14 @@ nav a:hover {
 
 .section {
     margin-bottom: 2em;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h2 {
     border-bottom: 2px solid #ff4500; /* Naruto's orange */
     padding-bottom: 0.5em;
     color: #ff4500; /* Naruto's orange */
+    font-family: 'Noto Serif JP', serif; /* Serif font for a touch of traditional elegance */
 }
 
 .projects, .hobbies {
@@ -95,6 +102,11 @@ h2 {
     border-radius: 8px;
     flex: 1 1 calc(33% - 2em);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project:hover, .hobby:hover {
+    transform: scale(1.05);
 }
 
 .project img, .hobby img {
@@ -113,6 +125,7 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1em;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 #contact-form button {
@@ -123,11 +136,13 @@ h2 {
     color: #ffffff;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 #contact-form button:hover {
     background-color: #ff6347; /* Lighter orange for hover effect */
+    transform: scale(1.05);
 }
 
 footer {
@@ -135,4 +150,5 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 1em 0;
+    font-family: 'Noto Sans JP', sans-serif;
 }
