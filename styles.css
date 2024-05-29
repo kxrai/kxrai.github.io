@@ -23,11 +23,31 @@ nav a {
     color: #ffffff;
     padding: 1em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
     transition: background-color 0.3s;
 }
 
 nav a:hover {
     background-color: #6495ed; /* Light blue for hover effect */
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon.open {
+    display: none;
+}
+
+.contact-link:hover .icon.closed {
+    display: none;
+}
+
+.contact-link:hover .icon.open {
+    display: inline;
 }
 
 .container {
