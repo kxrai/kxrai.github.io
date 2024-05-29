@@ -38,6 +38,24 @@ nav a:hover {
     height: 24px;
 }
 
+.icon.home.open {
+    display: none;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+.home-link:hover .icon.home.closed {
+    display: none;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+.home-link:hover .icon.home.open {
+    display: inline;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
 .icon.open {
     display: none;
 }
