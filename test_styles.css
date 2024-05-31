@@ -39,6 +39,11 @@ nav a {
     font-weight: 700;
 }
 
+nav a.active {
+    background-color: #6495ed;
+    border-radius: 5px;
+}
+
 nav a:hover {
     background-color: #6495ed;
     transform: scale(1.05);
@@ -82,11 +87,39 @@ nav a:hover {
 .container {
     flex: 1;
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section {
     margin-bottom: 2em;
     text-align: center;
+    max-width: 800px;
+}
+
+.profile-pic {
+    margin-bottom: 1em;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.showcase-image img {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -99,66 +132,42 @@ h2 {
 p {
     font-size: 1.2em;
     color: #555;
-    max-width: 600px;
-    margin: 0 auto;
     line-height: 1.6;
 }
 
-.projects, .hobbies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-.project, .hobby {
-    background-color: #ffffff;
-    padding: 1em;
-    border-radius: 16px;
-    flex: 1 1 calc(33% - 2em);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    max-width: 300px;
-}
-
-.project:hover, .hobby:hover {
-    transform: scale(1.05);
-}
-
-.project img, .hobby img {
-    max-width: 100%;
-    border-radius: 16px;
-}
-
-#contact-form {
+form {
     display: flex;
     flex-direction: column;
     gap: 1em;
     max-width: 600px;
-    margin: 0 auto;
+    width: 100%;
 }
 
-#contact-form input, #contact-form textarea {
+label {
+    font-size: 1.2em;
+    color: #333;
+}
+
+input, textarea {
     padding: 0.5em;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1em;
 }
 
-#contact-form button {
-    padding: 0.5em;
-    border: none;
-    border-radius: 8px;
+button {
     background-color: #ff4500;
     color: #ffffff;
-    font-size: 1em;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s;
 }
 
-#contact-form button:hover {
-    background-color: #ff6347;
-    transform: scale(1.05);
+button:hover {
+    background-color: #e63e00;
 }
 
 footer {
