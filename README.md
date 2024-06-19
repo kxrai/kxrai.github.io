@@ -1,4 +1,4 @@
-# Alicia Loi's Personal Website 🌐
+# Alicia's Personal Website 🌐
 
 🚧 **This project is still under construction.** 🚧
 
