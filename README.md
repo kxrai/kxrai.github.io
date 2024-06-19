@@ -1,5 +1,7 @@
 # Alicia Loi's Personal Website 🌐
 
+🚧 **This project is still under construction.** 🚧
+
 Welcome to my personal website! This site is a showcase of my projects, hobbies, and more. Below you'll find an overview of the different sections and functionalities of the website.
 
 ## Table of Contents
